@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4c46d5;
+}
+
+
+a {
+    color: #6c63ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4c46d5;
+}
+
+
+
+
+
+
+.dashboard {
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dashboard h1, .dashboard h2, .dashboard h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+textarea#notes-input, textarea#ai-result {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea[readonly] {
+    background-color: #f9f9f9;
+    color: #888;
+}
+
+.service-options {
+    margin-bottom: 20px;
+}
+
+.service-options label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.notes-container {
+    margin-bottom: 20px;
+}
+
+
+.result-box {
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-options button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.result-options button:last-child {
+    margin-right: 0;
+}
+
+
+.import-export {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+.import-options, .export-options {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.logout button {
+    padding: 10px 20px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout button:hover {
+    background-color: #d94545;
+}
+
+
+@media (max-width: 768px) {
+    .dashboard, .container, .import-export {
+        padding: 20px;
+    }
+}
+
